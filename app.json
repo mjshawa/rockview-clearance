@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Rockview Clearance Hub",
+    "slug": "rockview-clearance-hub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d233a"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0d233a"
+      },
+      "package": "com.rockview.clearancehub",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Rockview Clearance Hub to use the camera to scan receipts and past papers."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow Rockview Clearance Hub to use the camera to scan receipts and past papers."
+        }
+      ]
+    ]
+  }
+}
