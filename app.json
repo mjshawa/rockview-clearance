@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0d233a"
+      "backgroundColor": "#15803d"
     },
     "ios": {
       "supportsTablet": true
@@ -17,11 +17,11 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#0d233a"
+        "backgroundColor": "#15803d"
       },
       "package": "com.rockview.clearancehub",
       "permissions": [
-        "CAMERA"
+        "android.permission.CAMERA"
       ]
     },
     "web": {
@@ -31,7 +31,8 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow Rockview Clearance Hub to use the camera to scan receipts and past papers."
+          "cameraPermission": "Allow Rockview Clearance Hub to use the camera to scan receipts and past papers.",
+          "recordAudioAndroidPermission": false
         }
       ],
       [
@@ -40,6 +41,11 @@
           "cameraPermission": "Allow Rockview Clearance Hub to use the camera to scan receipts and past papers."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f366ebec-f4c3-4fe9-b91d-4923fc157fea"
+      }
+    }
   }
 }
